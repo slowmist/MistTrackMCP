@@ -1,0 +1,46 @@
+{
+  "name": "misttrack",
+  "version": "1.0.7",
+  "main": "dist/MistTrackMCPServer.js",
+  "bin": {
+    "misttrack": "dist/index.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/MistTrackMCPServer.js",
+    "dev": "tsc && node dist/MistTrackMCPServer.js",
+    "prepare": "npm run build && chmod +x dist/index.js"
+  },
+  "keywords": [
+    "misttrack",
+    "mcp",
+    "claude",
+    "ai",
+    "crypto",
+    "blockchain"
+  ],
+  "author": "slowmist",
+  "license": "ISC",
+  "description": "MistTrack MCP Server - 为Claude提供MistTrack区块链分析功能",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "axios": "^1.9.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
