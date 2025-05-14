@@ -93,6 +93,62 @@ Can you analyze it to a depth of 2 layers?
 
 Claude will automatically use the tool to provide detailed multi-layer analysis of the address.
 
-## License
+## Usage Examples
 
-ISC 
+Here are some examples of using MistTrack MCP tools:
+
+### Address Label Lookup
+
+Use the `mcp_misttrack_get_address_labels` tool to query the label information of blockchain addresses, helping to identify the purpose or risk of addresses.
+
+```
+Please check the label information for this Ethereum address: [ETH_ADDRESS]
+```
+
+![Label Check Example](images/labels_check.jpg)
+
+### Address Overview Analysis
+
+Use the `mcp_misttrack_get_address_overview` tool to get balance and statistical information for an address.
+
+```
+Please analyze the overview information of this Bitcoin address: [BTC_ADDRESS]
+```
+
+![Address Overview Example](images/overview.jpg)
+
+### Counterparty Analysis
+
+Use the `mcp_misttrack_get_address_counterparty` tool to analyze the transaction counterparties of an address.
+
+```
+Please analyze the counterparties of this address: [ETH_ADDRESS]
+```
+
+### Exchange Fund Flow Analysis
+
+Use the `mcp_misttrack_analyze_transactions_recursive` tool to recursively analyze transaction relationships and track fund flows.
+
+```
+Please track the fund flow between this address and exchanges, with a depth of 2: [ETH_ADDRESS]
+```
+
+![Exchange Fund Flow](images/exchanges.jpg)
+
+### Malicious Fund Detection
+
+Use the `mcp_misttrack_check_malicious_funds` tool to detect whether an address contains marked malicious funds.
+
+```
+Please check if this address has malicious funds: [ETH_ADDRESS]
+```
+
+![Malicious Fund Detection](images/funds_clean.jpg)
+
+### Risk Scoring
+
+Use the `mcp_misttrack_get_risk_score` tool to get the risk score of an address or transaction.
+
+```
+Please assess the risk level of this address: [ETH_ADDRESS]
+``` 
